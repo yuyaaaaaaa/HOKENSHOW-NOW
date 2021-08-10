@@ -12,6 +12,7 @@ const $h1 = document.getElementsByTagName('h1');
 const $main = document.getElementById('main');
 const $_1gou_kokuho = document.getElementById('_1gou_kokuho');
 const $_1gou_huyou = document.getElementById('_1gou_huyou');
+const $_1gou_ninkei = document.getElementById('_1gou_ninkei');
 const $_2gou = document.getElementById('_2gou');
 const $_2gou_kamo = document.getElementById('_2gou_kamo');
 const $_3gou = document.getElementById('_3gou');
@@ -27,6 +28,9 @@ const setup = () => {
         $main.style.display = 'none';
     } else if(flowChartIndex === '一号・扶養') {
         $_1gou_huyou.style.display = 'block';
+        $main.style.display = 'none';
+    } else if (flowChartIndex === '一号・任継') {
+        $_1gou_ninkei.style.display = 'block';
         $main.style.display = 'none';
     } else if(flowChartIndex === '二号') {
         $_2gou.style.display = 'block';
@@ -104,6 +108,7 @@ $h1[0].addEventListener('click', function() {
     flowChartIndex = 0;
     $_1gou_kokuho.style.display = 'none';
     $_1gou_huyou.style.display = 'none';
+    $_1gou_ninkei.style.display = 'none';
     $_2gou.style.display = 'none';
     $_2gou_kamo.style.display = 'none';
     $_3gou.style.display = 'none';
