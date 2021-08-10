@@ -1,0 +1,131 @@
+.html, body {
+    margin: 0;
+}
+
+header {
+    background-color: #114F8D;
+    height: 230px;
+    color: #fff;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header-container span {
+    padding-top: 40px;
+}
+
+.header-container strong {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+#_1gou_kokuho, #_1gou_huyou, #_2gou, #_2gou_kamo, #_3gou {
+    display: none;
+}
+
+.main-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.status {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.question {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.answer {
+    padding-top: 45px;
+}
+
+.answer button {
+    margin: 0 30px;
+    padding: 15px 75px;
+    background-color: rgb(17, 79, 141);
+    color: #fff;
+}
+.answer button:hover {
+    background-color: rgba(17, 79, 141, 0.6);
+}
+
+.description {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.description span {
+    border-bottom: 5px solid #114F8D;
+    display: inline-block;
+}
+
+.about-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    text-align: center;
+    cursor: pointer;
+    padding: 0 20px;
+}
+.about-question {
+    font-size: 18px;
+    background-color: #114F8D;
+    display: inline-block;
+    color: #fff;
+    padding: 12px 18px;
+    margin-top: 25px;
+}
+.about-question:hover {
+    background-color: rgba(17, 79, 141, 0.6);
+}
+.about-answer {
+    font-size: 16px;
+    display: none;
+}
+.open {
+    display: initial;
+}
+
+footer {
+    background-color: #114F8D;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}

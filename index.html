@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOKENSHOW-NOW</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>hokenshow-now</h1>
+            <span>自分の健康保険と年金について知ろう</span>
+            <strong>今あなたが加入すべき健康保険と年金制度は？</strong>
+        </div>
+    </header>
+
+    <main id="main" class="open">
+        <div class="main-container">
+            <div class="status">あなたは国民年金第<span id="js-status_1"></span><span id="js-status">被保険者、もしくは第<span id ="js-status_2"></span></span>被保険者です。</div>
+            <div class="question" id="js-question"></div>
+            <div class="answer" id="js-answer">
+                <button></button>
+                <button></button>
+                <button class="remove"></button>
+                <button class="remove"></button>
+            </div>
+        </div>
+    </main>
+
+    <main id="_1gou_kokuho">
+        <div class="main-container">
+            <div class="description">
+                <p><span>あなたは国民年金第一号被保険者です。</span></p>
+                <p><span>国民健康保険に加入する必要があります。</span></p>
+                <p>詳しくはお住まいの市町村の市役所にお聞きください。</p>
+            </div>
+        </div>
+        <div class="about-wrap">
+            <dl class="about">
+                <dt class="about-question">国民年金第一号被保険者とは？▼</dt>
+                <dd class="about-answer">
+                    <p>国民年金第一号被保険者とは、２０歳〜６０歳の個人事業主や学生、無職の方が加入する年金保険です。</p>
+                    <p>所得にかかわらず、保険料は一定です。</p>
+                    <p>一年分を一括で支払うことで割引が適用されます。</p>
+                    <p>お住まいの市町村の市役所が窓口になります。</p>
+                </dd>
+            </dl>
+            <dl class="about">
+                <dt class="about-question">国民健康保険とは？▼</dt>
+                <dd class="about-answer">
+                    <p>国民健康保険とは、個人事業主や家族の扶養に入れなかった方が加入する健康保険です。</p>
+                    <p>前年の所得によって保険料が変わります。</p>
+                    <p>国民健康保険には扶養家族の制度がなく、一世帯あたりで保険料の上限額が設定されています。</p>
+                    <p>お住まいの市町村の市役所が窓口になります。</p>
+                </dd>
+            </dl>
+        </div>
+    </main>
+
+    <main id="_1gou_huyou">
+        <div class="description">
+            <p><span>あなたは国民年金第一号被保険者です。</span></p>
+            <p><span>ご家族の加入する健康保険に被扶養者として加入できる可能性があります。</span></p>
+            <p>詳しくはご家族の勤務先の総務課や人事担当にお聞きください。</p>
+        </div>
+        <div class="about-wrap">
+            <dl class="about">
+                <dt class="about-question">国民年金第一号被保険者とは？▼</dt>
+                <dd class="about-answer">
+                    <p>国民年金第一号被保険者とは、２０歳〜６０歳の個人事業主や学生、無職の方が加入する年金保険です。</p>
+                    <p>所得にかかわらず、保険料は一定です。</p>
+                    <p>一年分を一括で支払うことで割引が適用されます。</p>
+                    <p>お住まいの市町村の市役所が窓口になります。</p>
+                </dd>
+            </dl>
+            <dl class="about">
+                <dt class="about-question">健康保険の被扶養者とは？▼</dt>
+                <dd class="about-answer">
+                    <p>健康保険の被扶養者とは、会社員や公務員などの「国民年金第二号被保険者」が家族にいる場合、その保険に加入できる制度です。</p>
+                    <p>被扶養者として認定してもらうには、その家族が加入している健康保険組合等が指定する条件を満たしている必要があります。</p>
+                    <p>一般的には年収１３０万以内であったり、別居している場合は仕送りをしているなどの生計維持関係を証明する必要があります。</p>
+                    <p>扶養家族として認定されれば、第二号被保険者が支払う健康保険料で賄われるため、自身で保険料を納める必要がありません。</p>
+                </dd>
+            </dl>
+        </div>
+    </main>
+
+    <main id="_2gou">
+        <div class="description">
+            <p><span>あなたは国民年金第二号被保険者です。</span></p>
+            <p><span>勤務先の健康保険に加入しています。</span></p>
+            <p>詳しくは勤務先の総務課や人事担当にお聞きください。</p>
+        </div>
+        <dl class="about">
+            <dt class="about-question">国民年金第二号被保険者とは？▼</dt>
+            <dd class="about-answer">
+                <p>国民年金第二号被保険者とは、会社員や公務員等、いわゆる一般労働者が加入する年金保険です。</p>
+                <p>厚生年金と国民年金、同時に加入していることになります。</p>
+                <p>健康保険についても会社が加入している健康保険に強制的に加入することになります。</p>
+                <p>保険料は会社と折半負担することになっており、通常は毎月の給料から天引きで支払う形になります。</p>
+            </dd>
+        </dl>
+    </main>
+
+    <main id="_2gou_kamo">
+        <div class="description">
+            <p><span>あなたは国民年金第二号被保険者の可能性があります。</span></p>
+            <p><span>勤務先の健康保険に加入している可能性があります。</span></p>
+            <p>詳しくは勤務先の総務課や人事担当にお聞きください。</p>
+        </div>
+        <dl class="about">
+            <dt class="about-question">国民年金第二号被保険者とは？▼</dt>
+            <dd class="about-answer">
+                <p>国民年金第二号被保険者とは、会社員や公務員等、いわゆる一般労働者が加入する年金保険です。</p>
+                <p>厚生年金と国民年金、同時に加入していることになります。</p>
+                <p>健康保険についても会社が加入している健康保険に強制的に加入することになります。</p>
+                <p>保険料は会社と折半負担することになっており、通常は毎月の給料から天引きで支払う形になります。</p>
+            </dd>
+        </dl>
+    </main>
+
+    <main id="_3gou">
+        <div class="description">
+            <p><span>あなたは国民年金第三号被保険者の可能性があります。</span></p>
+            <p><span>配偶者の勤務先の健康保険に扶養家族として加入できる可能性があります。</span></p>
+            <p>詳しくは配偶者の勤務先の総務課や人事担当にお聞きください。</p>
+        </div>
+        <div class="about-wrap">
+            <dl class="about">
+                <dt class="about-question">国民年金第三号被保険者とは？▼</dt>
+                <dd class="about-answer">
+                    <p>国民年金第三号被保険者とは、会社員や公務員「国民年金第二号被保険者」が配偶者の場合、一定の条件を満たすことで</p>
+                    <p>保険料を支払わずに国民年金に加入できる制度です。</p>
+                    <p>一般的にはその配偶者の健康保険の被扶養者になることで第三号被保険者になることができます。</p>
+                    <p>第3号被保険者と健康保険の扶養に入ることができれば、健康保険と年金に保険料なしで加入することができます。</p>
+                </dd>
+            </dl>
+            <dl class="about">
+                <dt class="about-question">健康保険の被扶養者とは？▼</dt>
+                <dd class="about-answer">
+                    <p>健康保険の被扶養者とは、会社員や公務員などの「国民年金第二号被保険者」が家族にいる場合、その保険に加入できる制度です。</p>
+                    <p>被扶養者として認定してもらうには、その家族が加入している健康保険組合等が指定する条件を満たしている必要があります。</p>
+                    <p>一般的には年収１３０万以内であったり、別居している場合は仕送りをしているなどの生計維持関係を証明する必要があります。</p>
+                    <p>扶養家族として認定されれば、第二号被保険者が支払う健康保険料で賄われるため、自身で保険料を納める必要がありません。</p>
+                </dd>
+            </dl>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="https://www.nenkin.go.jp/">日本年金機構</a>
+            <a href="https://www.kyoukaikenpo.or.jp/">全国健康保険協会</a>
+            <a href="https://www.chikyosai.or.jp/">地方公務員共済組合</a>
+            <a href="https://ja.wikipedia.org/wiki/%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%BA">wikipedia</a>
+        </div>
+    </footer>
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
